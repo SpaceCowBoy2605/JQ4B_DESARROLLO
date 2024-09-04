@@ -1,0 +1,11 @@
+html 
+    head
+        title ejemplo pug
+    body
+        h1 encabezado
+        p.alert hola mundo
+    ol
+        each item in["opcion 1","opcion 2","opcion 3"]
+            li #{item} 
+    include condiciones
+    include tabla    

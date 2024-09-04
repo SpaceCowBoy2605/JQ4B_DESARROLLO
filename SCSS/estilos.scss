@@ -1,0 +1,27 @@
+/*variables siempre empieza con el signo de dolar $*/
+@import "variables"; //para importar las variables de otro archivo scss
+@import "mixins";
+@import "divs";
+@import "nesting";
+
+h1 {
+    color: $rojo;
+    border: $borde;
+}
+
+body {
+    @if $sexo =="hombre" {
+        background-color: white;
+    }
+
+    @else {
+        background-color: pink;
+    }
+}
+
+
+//COMANDO QUE HAY QUE EJECUTAR EN CADA CAMBIO QUE SE HAGA
+//sass ./SCSS/estilos.scss ./CSS/estilos.css
+//comando para que ya no se tenga que ejecutar cada ves que se hace un cambio.
+//sass -w ./SCSS/estilos.scss ./CSS/estilos.css
+// npm run sassuk
